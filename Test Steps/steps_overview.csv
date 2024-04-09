@@ -1,19 +1,24 @@
 Flow ID,Name,Description,Test Steps,Flow Priority
-1,Verify Successful Logout from Jira Secure Dashboard,"Navigate to the Jira login page and log in to access the secure dashboard. Create a new item, assign it, and then log out. Verify successful logout from the secure dashboard.","Step 1: Navigate to http://a7e83065db3ac4594bd4a156c4074484-1448992209.us-east-2.elb.amazonaws.com/jira/login.jsp
+1,Verify Successful Logout from Jira Secure Dashboard,"Navigate to the Jira login page and log in to access the secure dashboard. Perform actions such as inputting a summary, assigning a task, and logging out. Verify successful logout from the secure dashboard.","Step 1: Navigate to http://a7e83065db3ac4594bd4a156c4074484-1448992209.us-east-2.elb.amazonaws.com/jira/login.jsp
 Step 2: Login -> Navigate to page 'jira/secure/Dashboard.jspa'
-Step 3: Click on link 'create link'
-Step 4: Enter input value in input field 'summary'
-Step 5: Click on rich
-Step 6: Click on button 'assign-to-me-trigger'
-Step 7: Click on input field 'Edit' -> Navigate to page 'jira/logoutconfirm.jsp'
-Step 8: Click on input field 'Logout' -> Navigate to page 'jira/secure/Logout.jspa'
-Step 9: Take full page screenshot as checkpoint
+Step 3: Enter input value in input field 'summary'
+Step 4: Click on rich
+Step 5: Click on button 'assign-to-me-trigger' -> Navigate to page 'jira/logoutconfirm.jsp'
+Step 6: Click on input field 'Logout' -> Navigate to page 'jira/secure/Logout.jspa'
+Step 7: Take full page screenshot as checkpoint
 ",Trivial
-2,Verify Successful Logout from Jira Secure Edit Issue,Navigate to the Jira login page and log in to access the secure edit issue page. Update an issue and then log out. Verify successful logout from the secure dashboard.,"Step 1: Navigate to http://a7e83065db3ac4594bd4a156c4074484-1448992209.us-east-2.elb.amazonaws.com/jira/login.jsp
+2,Verify Successful Logout from Jira Secure Edit Issue,"Navigate to the Jira login page and log in to access the secure edit issue page. Input a summary, update an issue, and log out. Verify successful logout from the secure edit issue page.","Step 1: Navigate to http://a7e83065db3ac4594bd4a156c4074484-1448992209.us-east-2.elb.amazonaws.com/jira/login.jsp
 Step 2: Login -> Navigate to page 'jira/secure/EditIssue!default.jspa'
 Step 3: Enter input value in input field 'summary'
 Step 4: Click on rich
 Step 5: Click on button 'Update' -> Navigate to page 'jira/logoutconfirm.jsp'
 Step 6: Click on input field 'Logout' -> Navigate to page 'jira/secure/Logout.jspa'
 Step 7: Take full page screenshot as checkpoint
+",Trivial
+3,Verify Successful Logout from Jira Secure Add Comment,"Navigate to the Jira login page and log in to access the secure add comment page. Perform actions such as adding a comment, logging out, and verify successful logout from the secure add comment page.","Step 1: Navigate to http://a7e83065db3ac4594bd4a156c4074484-1448992209.us-east-2.elb.amazonaws.com/jira/login.jsp
+Step 2: Login -> Navigate to page 'jira/secure/AddComment!default.jspa'
+Step 3: Click on rich
+Step 4: Click on button 'Add' -> Navigate to page 'jira/logoutconfirm.jsp'
+Step 5: Click on input field 'Logout' -> Navigate to page 'jira/secure/Logout.jspa'
+Step 6: Take full page screenshot as checkpoint
 ",Trivial
